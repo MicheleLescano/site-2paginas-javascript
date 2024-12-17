@@ -4,6 +4,7 @@
 O projeto contém duas páginas principais:
 
 Tela de Login :
+
 Página Principal : Uma tela de boas-vindas exibida após o login, com um botão para realizar logout.
 Este sistema é ideal para estudos e projeções de conceitos básicos de autenticação e manipulação de eventos com JavaScript.
 
