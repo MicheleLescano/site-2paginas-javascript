@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::: Login :::</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Login</h1>
+
+        <form action="#login" method="get" onsubmit="login()">
+
+            <div class="box-input">
+                <label for="user" class="label-login"> Usuário </label>
+                <input type="text" name="user" id="user" class="input-login">
+            </div>
+
+            <div class="box-input">
+                <label for="pass" class="label-login"> Senha </label>
+                <input type="password" name="pass" id="pass" class="input-login">
+                <small id="show-hide"> mostrar </small>
+                <small id="help-text"> </small>
+            </div>
+
+            <div id="box-save">
+               <div style="display: inline;">
+                    <input type="checkbox" name="save" id="save">
+                    <label for="save"> Mantenha-me conectado </label>
+               </div> 
+
+               <a href="#esqueceu"> Esqueceu a senha? </a>
+            </div>
+
+            <input type="submit" value="Entrar">
+
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

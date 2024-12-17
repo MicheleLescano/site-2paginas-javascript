@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(175, 204, 204);
+}
+
+main {
+    background-color: cadetblue;
+    width: 50%;
+    border-radius: 4px;
+    /*Centralizando o "main" caixa principal*/
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 20px 20px 20px;
+    /*Centralizando o conteúdo da caixa*/
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Criando uma sombra*/
+    box-shadow: 8px 8px 15px black;
+}
+
+.box-input {
+    margin: 20px 0px 20px 0px;
+}
+
+form {
+   /* background-color: rgb(162, 185, 185); */
+    width: 70%;
+    margin: auto;
+}
+
+.label-login {
+   display: block; 
+   text-align: left;
+   font-weight: bold;
+}
+
+.input-login {
+    font-size: 16pt;  
+    padding: 5px;
+    border-radius: 4px;
+    width: 98%;
+}
+
+#box-save {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+input[type=submit] {
+    width: 20%;
+    font-size: 14pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+#show-hide {
+    position: absolute;
+    bottom: 116px;
+    right: 130px;
+    background-color: gray;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+ /************************************************************************/
+@media (max-width: 980px) and (min-width: 680px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media (max-width: 680px){
+    #box-save {
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    }
+
+    body {
+        background-color: rgb(175, 204, 204);
+    }
+
+    main {
+        width: 100%;
+        box-shadow: none;
+    } 
+
+    #show-hide {
+         bottom: 42%;
+    }
+
+    .input-login {
+        font-size: 16pt;  
+        padding: 5px;
+        border-radius: 4px;
+        width: 98%;
+        outline: none;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        background-color:  transparent;
+        border-bottom: solid ;
+        /* border:solid; */
+    }
+    .input-login:focus {
+        border-bottom-color: white ;
+    }
+}
